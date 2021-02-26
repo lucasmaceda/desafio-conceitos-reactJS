@@ -21,7 +21,7 @@ function App()
     const response = await api.post('repositories', {
       title: `Novo projeto ${Date.now()}`,
       url: "test",
-      techs: "test"
+      techs: "test" 
     });
 
     setRepositories([...repositories, response.data]);
